@@ -88,7 +88,7 @@ int main()
 
         counter++;
 
-        for (int i = 0; i <= counter; i++)
+        for (int i = 0; i < counter; i++)
         {
             printf("numero: %d\n", (array_film + i)->numero);
             printf("Titolo: %s\n", (array_film + i)->titolo);
@@ -97,6 +97,8 @@ int main()
             printf("Disponibilita: %s\n\n", (array_film + i)->disponibilita);
         }
     }
+    
+    fclose(fp);
 
     return 0;
 }
