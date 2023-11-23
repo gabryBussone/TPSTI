@@ -1,0 +1,68 @@
+Appunti su Puntatori in C
+--------------------------
+
+1. Dichiarazione e Inizializzazione dei Puntatori:
+
+   - `int *p`: Dichiarazione di un puntatore a un intero.
+   - `int x = 10; int *p = &x;`: Inizializzazione di un puntatore con l'indirizzo di una variabile.
+
+2. Utilizzo dell'Operatore Dereferenziazione (*):
+
+   - `*p`: Accede al valore puntato da `p`.
+   - `*p = 20;`: Modifica il valore dell'oggetto puntato da `p`.
+
+3. Utilizzo dell'Operatore Indirizzo (&):
+
+   - `&x`: Restituisce l'indirizzo di `x`.
+
+4. Lavorare con Vettori e Puntatori:
+
+   - `int arr[5]; int *ptr = arr;`: Puntatore al primo elemento di un array.
+   - `*(ptr + i)`: Accesso all'elemento `i`-esimo dell'array attraverso il puntatore.
+
+5. Utilizzo di Cicli con Puntatori:
+
+   - `int vet[DIM_MAX];
+    for (int *k = vet; k < vet + DIM_MAX; k++)`: Ciclo per inizializzare un array attraverso un puntatore.
+
+6. Uso di malloc e free con Puntatori:
+
+   - `int *ptr = (int *)malloc(5 * sizeof(int));`: Allocazione dinamica di memoria per un array di interi.
+   - `free(ptr);`: Liberazione della memoria allocata dinamicamente.
+
+7. Liste Collegare con Puntatori:
+
+   - Definizione di una struttura per un nodo: `struct Nodo { int dato; struct Nodo *next; };`
+   - Allocazione di un nuovo nodo: `struct Nodo *nodo = (struct Nodo *)malloc(sizeof(struct Nodo));`
+   - Collegamento dei nodi: `nodo1->next = nodo2;`
+
+
+
+Operazioni Comuni con Stringhe e Puntatori
+------------------------------------------
+
+FILE *fp;
+    char *campo;
+    char riga[DIM_RIGA];
+    int numLibri = 0;
+    fp = fopen(nome, "r");
+
+while (fgets(riga, DIM_RIGA, fp))
+        {
+            campo = strtok(riga, ",");                  assegna a campo la stringa prima della virgola
+            lista->titolo = strdup(campo);              assegna a titolo la stringa campo
+            campo = strtok(NULL, ",");
+            lista->autore = strdup(campo);
+            campo = strtok(NULL, ",");
+            lista->anno = atoi(campo);                  assegna ad anno la stringa comvertita in intero
+            lista++;
+            numLibri++;
+        }
+        fclose(fp);
+    }
+    return numLibri;
+
+
+
+
+for (*k = a; *k < a + DIM, k++)
