@@ -1,3 +1,4 @@
+
 typedef struct Node{
     int valore;
     struct Node* next;
@@ -49,8 +50,6 @@ for( int *p = a; p < a + DIM, p++){
 for(k = 0; k <= DIM; k++){
 
 }
-
-for(k)
 
 
 void aggiungi(Node** lista, int valore){
@@ -126,8 +125,8 @@ void aggiungi(Node** lista, int valore){
     Node* nuovoNodo = (Node*) malloc(sizeof(Node));
 
     if(lista != NULL){
-        lista->valore = valore;
-        lista->next= *lista;
+        nuovoNodo->valore = valore;
+        nuovoNodo->next= *lista;
         *lista = nuovoNodo;
     }
 }
