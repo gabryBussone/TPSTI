@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/gabrielbussone/Desktop/SCUOLA/QUARTA/TPSIT_github/output/esSequenzaNumeri'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _inizializzaPila, symObjAddr: 0x0, symBinAddr: 0x100003BE0, symSize: 0x18 }
+  - { offsetInCU: 0x7E, offset: 0x7E, size: 0x8, addend: 0x0, symName: _inizializzaPila, symObjAddr: 0x0, symBinAddr: 0x100003BE0, symSize: 0x18 }
+  - { offsetInCU: 0xA2, offset: 0xA2, size: 0x8, addend: 0x0, symName: _push, symObjAddr: 0x18, symBinAddr: 0x100003BF8, symSize: 0x7C }
+  - { offsetInCU: 0xE2, offset: 0xE2, size: 0x8, addend: 0x0, symName: _pop, symObjAddr: 0x94, symBinAddr: 0x100003C74, symSize: 0x7C }
+  - { offsetInCU: 0x126, offset: 0x126, size: 0x8, addend: 0x0, symName: _stampaPariPrimaDispari, symObjAddr: 0x110, symBinAddr: 0x100003CF0, symSize: 0x16C }
+  - { offsetInCU: 0x19E, offset: 0x19E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x27C, symBinAddr: 0x100003E5C, symSize: 0x80 }
+...
