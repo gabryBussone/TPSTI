@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/gabrielbussone/Desktop/SCUOLA/QUARTA/TPSIT_github/output/esFilm'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _is_empty, symObjAddr: 0x0, symBinAddr: 0x100003C10, symSize: 0x20 }
+  - { offsetInCU: 0xAE, offset: 0xAE, size: 0x8, addend: 0x0, symName: _is_empty, symObjAddr: 0x0, symBinAddr: 0x100003C10, symSize: 0x20 }
+  - { offsetInCU: 0xD6, offset: 0xD6, size: 0x8, addend: 0x0, symName: _push, symObjAddr: 0x20, symBinAddr: 0x100003C30, symSize: 0x30 }
+  - { offsetInCU: 0x108, offset: 0x108, size: 0x8, addend: 0x0, symName: _pop, symObjAddr: 0x50, symBinAddr: 0x100003C60, symSize: 0x6C }
+  - { offsetInCU: 0x13E, offset: 0x13E, size: 0x8, addend: 0x0, symName: _printStack, symObjAddr: 0xBC, symBinAddr: 0x100003CCC, symSize: 0x8C }
+  - { offsetInCU: 0x170, offset: 0x170, size: 0x8, addend: 0x0, symName: _freeStack, symObjAddr: 0x148, symBinAddr: 0x100003D58, symSize: 0x48 }
+  - { offsetInCU: 0x194, offset: 0x194, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x190, symBinAddr: 0x100003DA0, symSize: 0x150 }
+...
